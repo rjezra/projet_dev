@@ -1,4 +1,7 @@
 <?php
+$connexion = mysqli_connect("localhost", "root", "");
+$query = "create database if not exists dev_db";
+mysqli_query($connexion, $query);
 
 $connexion = mysqli_connect("localhost", "root", "", "dev_db");
 
